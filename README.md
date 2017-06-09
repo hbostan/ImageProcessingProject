@@ -1,12 +1,12 @@
 # Image Processing Project
 
-	This program takes the 2d images in a directory and processes them after
+  This program takes the 2d images in a directory and processes them after
 processing results are saved inside the provided directory in a folder called
 "output"
 
-> usage: main.py [-h] [-l] [-p PATH] [-o OPERATION | -s SCRIPT]
->               [--value [VALUE]] [--point [POINT [POINT ...]]]
->               [--shape [SHAPE [SHAPE ...]]]
+```usage: main.py [-h] [-l] [-p PATH] [-o OPERATION | -s SCRIPT]
+               [--value [VALUE]] [--point [POINT [POINT ...]]]
+               [--shape [SHAPE [SHAPE ...]]]```
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -38,24 +38,40 @@ Again if you wish to pass these to your funtion the names should be same in
 the function decleration ( e.g. myscript(image,value,point): ) You can check
 the files under scripts/ for examples.
 
-##Built-in Operations
+## Built-in Operations
 	These operations can be specified with OPERATION (-o) option. Some of these operations take further arguments.
-###averagingBlur
+	
+### averagingBlur
 
-###closing
-###dialation
-###erosion
-###fft
-###gaussianBlur
-###medianFilter
-###opening
-###regionGrowing
-###sharpen
-###thresholding
-It divides the image into foreground and background based on the threshold value. The output is a binary image.
-Thresholding is done according to the passed in "--value", if no value is passed the default is 128.
-#### Examples
-###utilities
+### closing
+
+### dialation
+
+### erosion
+
+### fft
+
+### gaussianBlur
+
+### medianFilter
+
+### opening
+
+### regionGrowing
+
+### sharpen
+
+### thresholding
+
+  It divides the image into foreground and background based on the threshold value. The output is a binary image.
+Thresholding is done according to the passed in "--value", if no value is passed the default is 128. Following code
+performs thresholding with a threshold value of 94
+
+	python main.py -p PATH_TO_FOLDER -o thresholding --value 94
+	
+
+
+### utilities
 
 
 ## Usage examples
