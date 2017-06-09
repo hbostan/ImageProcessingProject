@@ -187,7 +187,7 @@ directory and it will be recognised by the program.
 
 	python main.py -p PATH_TO_FOLDER -s PATH_TO_SCRIPT
 
-For example if we have a script named `doSomething.py` which contains the function:
+For example if we have a script named `doSomething.py` in `~/Desktop/` which contains the function:
 ```
 doSomething(inputImg, value=15):
 	...
