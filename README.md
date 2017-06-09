@@ -4,9 +4,10 @@
 processing results are saved inside the provided directory in a folder called
 "output"
 
-```usage: main.py [-h] [-l] [-p PATH] [-o OPERATION | -s SCRIPT]
-               [--value [VALUE]] [--point [POINT [POINT ...]]]
-               [--shape [SHAPE [SHAPE ...]]]```
+```
+	usage: main.py [-h] [-l] [-p PATH] [-o OPERATION | -s SCRIPT]
+			       [--value [VALUE]] [--point [POINT [POINT ...]]]
+                   [--shape [SHAPE [SHAPE ...]]]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -37,6 +38,7 @@ your script you can use built-in "value", "point", and "shape" parameters.
 Again if you wish to pass these to your funtion the names should be same in
 the function decleration ( e.g. myscript(image,value,point): ) You can check
 the files under scripts/ for examples.
+```
 
 ## Built-in Operations
 	These operations can be specified with OPERATION (-o) option. Some of these operations take further arguments.
