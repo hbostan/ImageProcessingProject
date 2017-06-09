@@ -172,6 +172,32 @@ performs thresholding with a threshold value of 94
 
 This is not a usable operation.
 
+## Using User Created Scripts
+
+User created scripts are also python scripts. These scripts must have only a single python function inside.
+Moreover the name of the funtion and the name of the script file must be the same. For example if we have
+a script file `myscript.py`, the function inside the file must be named `myscript`. Said function must have at least
+one argument, the image to be processed. The main program passes the image to the script in numpy ndarray
+format. And to save the image to the output directory, function must again return the image in numpy ndarray format.
+You can also use `--value`,`--shape` and `--point` options in your scripts. All that is need to be done is to add these
+arguments to your function decleration. For example `myscript(inputImage, value=None, shape=None, point=None)`. Default
+values are not mandatory but recommended. To use your script instead of `-o` you should use `-s` and provide the 
+path to your script. Or if you want to use your script as an operation you can move your script file inside the `scripts/`
+directory and it will be recognised by the program.
+
+	python main.py -p PATH_TO_FOLDER -s PATH_TO_SCRIPT
+
+For example if we have a script named `doSomething.py` which contains the function:
+```
+doSomething(inputImg, value=15):
+	...
+	...
+	return ...
+```
+Can be used in the program with the following command:
+
+	python main.py -p PATH_TO_FOLDER -s ~/Desktop/doSomething.py --value 45
+
 ## Usage examples
 
 Imagine we need to perform gaussian blur on all the images inside the `\home\hakan\Desktop\pictures`.
