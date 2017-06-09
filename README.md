@@ -1,12 +1,12 @@
 # Image Processing Project
 
-This program takes the 2d images in a directory and processes them after
+	This program takes the 2d images in a directory and processes them after
 processing results are saved inside the provided directory in a folder called
 "output"
 
-usage: main.py [-h] [-l] [-p PATH] [-o OPERATION | -s SCRIPT]
-               [--value [VALUE]] [--point [POINT [POINT ...]]]
-               [--shape [SHAPE [SHAPE ...]]]
+> usage: main.py [-h] [-l] [-p PATH] [-o OPERATION | -s SCRIPT]
+>               [--value [VALUE]] [--point [POINT [POINT ...]]]
+>               [--shape [SHAPE [SHAPE ...]]]
 
 optional arguments:
   -h, --help            show this help message and exit
