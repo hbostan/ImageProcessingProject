@@ -25,6 +25,7 @@ You can check the files under scripts/ for examples
 '''
 functionList = [item for item in dir(scripts) if not item.startswith("_")]
 
+#TODO! Add subparsers for commands for better argument passing
 parser = argparse.ArgumentParser(epilog=epi, description=desc)
 parser.add_argument( "-l", "--list", help="List the supported operations", action='store_true')
 parser.add_argument( "-p", "--path", help="Path to the folder which contains the images to be processed. Default directory is \"./pictures/\"", default="pictures/")

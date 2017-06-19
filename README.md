@@ -47,10 +47,12 @@ These options are used to pass parameters to operations.
 
 `--value` is used for passing a single integer argument.
 Example:
+
 	--value 54
 
 `--point` is used for passing a point. Option is followed by two numbers y and x coordinate.
 Example:
+
 	--point 40 85
 	
 `--shape` is used for passing a shape to operations which need a structuring element. Shape names are
